@@ -54,7 +54,7 @@ def handle_annotation(request):
             attempt.xcoordinate = dic[filename]['regions'][i]['shape_attributes']['x']
             attempt.ycoordinate = dic[filename]['regions'][i]['shape_attributes']['y']
             attempt.filename = filename
-            #attempt.image = request.data['imagefile']
+            
             attempt.save()
 
         #print ('---- JSON DATA ----\nDATA: {}',dic)
